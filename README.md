@@ -92,3 +92,14 @@ A idade está representada na propriedade 'age' do retorno da API:
 https://api.agify.io/?country_id=BR&name=gustavo
 
 Obs.: Se seu nome não constar na base deles (age == null), usar outro nome para os testes.
+
+## [M1S06] Ex 7 - Fetch
+Quanto será que está a preço do Bitcoin hoje???
+Vamos descobrir!
+
+Obtenha os dados nessa API : https://api.coincap.io/v2/assets/bitcoin, imprima a frase:
+'O preço do Bitcoin - <simbolo do bitcoin> em dólares hoje é $ <preço do bitcoin>`.
+
+Dicas:
+a) Repare que o retorno desta API encapsula os dados dentro de um objeto 'data'.
+b) Use as propriedades 'symbol' e 'priceUsd' do retorno para preencher os valores na frase.
