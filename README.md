@@ -61,3 +61,22 @@ const retornoEmpresa1 = new Promise( (resolve, reject) =>
 const retornoEmpresa2 = new Promise( (resolve, reject) => 
     setTimeout(resolve, 3000, "Empresa 2") ); // 3 segundos
 ~~~
+
+## [M1S06] Ex 5 - async-await
+
+Altere as funções abaixo usando async-await para retorno e tratamento de promises:
+~~~
+function obterClienteNoBancoDeDados(idCliente) {
+    return new Promise( (resolve, reject) => {
+            const cliente = { nome: 'bruce wayne', id: idCliente };
+            resolve(cliente);
+    });
+}
+
+function processar() {
+    obterClienteNoBancoDeDados(7)
+        .then(cliente => console.log(cliente));
+}
+
+processar();
+~~~
